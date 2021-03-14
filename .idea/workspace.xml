@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ea273b3-358c-47a3-8ac9-56f7c2655324" name="Default Changelist" comment="" />
+    <list default="true" id="0ea273b3-358c-47a3-8ac9-56f7c2655324" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RestTestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/polygon.local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/polygon.local.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +48,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -88,7 +129,6 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -135,25 +175,43 @@
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1piDdoy96hjiAjM3Ol9qw8n4RZ7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/blog/posts" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\polygon.local\resources\views\blog\posts" />
+      <recent name="C:\OpenServer\domains\polygon.local\app\Http\Controllers\Blog" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\polygon.local\app\Http\Controllers\Blog" />
       <recent name="C:\OpenServer\domains\polygon.local\resources\views\blog" />
     </key>
   </component>
@@ -179,10 +237,18 @@
       <workItem from="1615718835507" duration="1471000" />
       <workItem from="1615720313656" duration="1025000" />
       <workItem from="1615721346049" duration="5312000" />
+      <workItem from="1615731128777" duration="1063000" />
+      <workItem from="1615732282900" duration="3501000" />
+      <workItem from="1615737440588" duration="1850000" />
+      <workItem from="1615739424325" duration="891000" />
+      <workItem from="1615744910128" duration="326000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
