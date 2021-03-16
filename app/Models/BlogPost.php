@@ -46,4 +46,24 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class BlogPost extends Model
 {
     use HasFactory, SoftDeletes;
+
+    /*    protected $fillable = [
+            'title',
+            'slug',
+            'parent_id',
+            'description',
+            'destroy',
+        ];*/
+
+    public function category()
+    {
+        // статья -> категория
+        return $this->belongsTo(BlogCategory::class);
+    }
+
+    public function user()
+    {
+        // статья -> юзер
+        return $this->belongsTo(User::class);
+    }
 }

@@ -24,10 +24,16 @@ $groupData = [
     'prefix' => 'admin/blog',
 ];
 Route::group($groupData, function () {
-    $methods = ['index', 'edit', 'store', 'update', 'create',];
+    //Blog Categories
+    $methods = ['index', 'create', 'store', 'edit', 'update',];
     Route::resource('categories', 'CategoryController')
         ->only($methods) //white list
         ->names('blog.admin.categories');
+
+    //Blog Posts
+    Route::resource('posts', 'PostController')
+        ->except(['show']) //black list
+        ->names('blog.admin.posts');
 });
 
 //Route::resource('rest', 'RestTestController')->names('home');
