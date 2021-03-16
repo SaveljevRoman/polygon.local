@@ -3,6 +3,9 @@
         <div class="card">
             <div class="card-body">
                 <button type="submit" class="btn btn-primary">Сохранить</button>
+<!--                <div  class="btn btn-danger">
+                    <a href="" style="color: white; text-decoration: none">Назад</a>
+                </div>-->
             </div>
 
         </div>
