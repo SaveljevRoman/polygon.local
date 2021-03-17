@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea273b3-358c-47a3-8ac9-56f7c2655324" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BlogPostUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Observers/BlogCategoryObserver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Observers/BlogPostObserver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_add_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_messages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f6418ccd-d43b-43ed-80a9-370b25b95eb1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f6418ccd-d43b-43ed-80a9-370b25b95eb1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route.txt" beforeDir="false" afterPath="$PROJECT_DIR$/route.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +178,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/blog/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -180,16 +186,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Requests" />
+      <recent name="$PROJECT_DIR$/resources/views/blog/admin/posts/includes" />
+      <recent name="$PROJECT_DIR$/resources/views/blog/admin/posts" />
       <recent name="$PROJECT_DIR$/resources/views/blog/admin" />
       <recent name="$PROJECT_DIR$/app/Repositories" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin" />
-      <recent name="$PROJECT_DIR$/resources/views/blog/admin/category/includes" />
-      <recent name="$PROJECT_DIR$/resources/views/blog/admin/category" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\polygon.local\app\Http\Controllers\Blog" />
@@ -226,7 +232,10 @@
       <workItem from="1615795726757" duration="9360000" />
       <workItem from="1615809720219" duration="2375000" />
       <workItem from="1615812165509" duration="15204000" />
-      <workItem from="1615881752686" duration="27621000" />
+      <workItem from="1615881752686" duration="27703000" />
+      <workItem from="1615967214257" duration="806000" />
+      <workItem from="1615968575067" duration="16728000" />
+      <workItem from="1615990831718" duration="8296000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1615827289114</created>
@@ -242,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615907828114</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Post edit">
+      <created>1615915275103</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615915275103</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +270,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="123" />
     <MESSAGE value="Category edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Category edit" />
+    <MESSAGE value="Post edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Post edit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
