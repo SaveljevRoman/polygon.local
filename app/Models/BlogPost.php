@@ -59,12 +59,22 @@ class BlogPost extends Model
         'published_at',
     ];
 
+    /**
+     * Категория статьи
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function category()
     {
         // статья -> категория
         return $this->belongsTo(BlogCategory::class);
     }
 
+    /**
+     * Автор статьи
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function user()
     {
         // статья -> юзер

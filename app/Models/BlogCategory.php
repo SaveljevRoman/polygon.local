@@ -36,6 +36,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class BlogCategory extends Model
 {
     use HasFactory, SoftDeletes;
+
+    const ROOT = 1;
+
     //white list
     protected $fillable = [
       'title',
@@ -43,4 +46,34 @@ class BlogCategory extends Model
       'parent_id',
       'description',
     ];
+
+    /**
+     * Получить родительскую категорию
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function parentCategory()
+    {
+        return $this->belongsTo(BlogCategory::class, 'parent_id', 'id');
+    }
+
+    /**
+     * Пример аксессуара (Accessor)
+     *
+     * @return string
+     */
+    public function getParentTitleAttribute()
+    {
+        $title = $this->parentCategory->title
+            ?? ($this->isRoot()
+            ? 'Корень'
+            : '???');
+
+        return $title;
+    }
+
+    public function isRoot()
+    {
+        return $this->id === BlogCategory::ROOT;
+    }
 }
