@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea273b3-358c-47a3-8ac9-56f7c2655324" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DiggingDeeperController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/BlogCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/BlogPostObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/BlogPostObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route.txt" beforeDir="false" afterPath="$PROJECT_DIR$/route.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DiggingDeeperController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DiggingDeeperController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,6 +234,7 @@
       <workItem from="1615999255689" duration="95000" />
       <workItem from="1616054029846" duration="23694000" />
       <workItem from="1616082591750" duration="2798000" />
+      <workItem from="1616089888608" duration="2992000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1615827289114</created>
