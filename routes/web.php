@@ -36,5 +36,12 @@ Route::group($groupData, function () {
         ->names('blog.admin.posts');
 });
 
+
+
+Route::prefix('digging_deeper')->group(function () {
+    Route::get('collections', 'DiggingDeeperController@collections')
+        ->name('digging_deeper.collections');
+});
+
 //Route::resource('rest', 'RestTestController')->names('home');
 

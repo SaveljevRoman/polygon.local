@@ -87,6 +87,13 @@ class BlogPostObserver
         $this->setSlug($blogPost);
     }
 
+    public function deleting(BlogPost $blogPost)
+    {
+//        dd(__METHOD__, $blogPost);
+//         return false;
+    }
+
+
     /**
      * Handle the BlogPost "created" event.
      *
@@ -117,7 +124,7 @@ class BlogPostObserver
      */
     public function deleted(BlogPost $blogPost)
     {
-        //
+//        dd(__METHOD__, $blogPost);
     }
 
     /**
