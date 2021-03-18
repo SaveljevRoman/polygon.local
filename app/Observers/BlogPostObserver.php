@@ -34,15 +34,37 @@ class BlogPostObserver
     }
 
     /**
+     * Установка значения полю content_html относительно поля content_raw
+     *
+     * @param BlogPost $blogPost
+     */
+    protected function setHtml(BlogPost $blogPost)
+    {
+        if ($blogPost->isDirty('content_raw')) {
+            // TODO: генерация markdown -> html
+            $blogPost->content_html = $blogPost->content_raw;
+        }
+    }
+
+    protected function setUser(BlogPost $blogPost)
+    {
+        $blogPost->user_id = auth()->id() ?? BlogPost::UNKNOW_USER;
+    }
+
+    /**
      * Отработает ПЕРЕД созданием записи
      *
      * @param BlogPost $blogPost
      */
     public function creating(BlogPost $blogPost)
     {
-        /*$this->setPublishedAt($blogPost);
+        $this->setPublishedAt($blogPost);
 
-        $this->setSlug($blogPost);*/
+        $this->setSlug($blogPost);
+
+        $this->setHtml($blogPost);
+
+        $this->setUser($blogPost);
     }
 
     /**

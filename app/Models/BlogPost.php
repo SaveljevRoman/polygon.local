@@ -47,16 +47,17 @@ class BlogPost extends Model
 {
     use HasFactory, SoftDeletes;
 
-        protected $fillable = [
-            'title',
-            'slug',
-            'category_id',
-            'excerpt',
-            'content_raw',
-            'is_published',
-            'published_at',
-            'user_id',
-        ];
+    const UNKNOW_USER = 1;
+
+    protected $fillable = [
+        'title',
+        'slug',
+        'category_id',
+        'excerpt',
+        'content_raw',
+        'is_published',
+        'published_at',
+    ];
 
     public function category()
     {
