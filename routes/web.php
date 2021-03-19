@@ -37,7 +37,7 @@ Route::group($groupData, function () {
 });
 
 
-
+// маршрут для изучения коллекций
 Route::prefix('digging_deeper')->group(function () {
     Route::get('collections', 'DiggingDeeperController@collections')
         ->name('digging_deeper.collections');
