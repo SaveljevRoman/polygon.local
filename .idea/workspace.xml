@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea273b3-358c-47a3-8ac9-56f7c2655324" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DiggingDeeperController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DiggingDeeperController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +230,8 @@
       <workItem from="1615999255689" duration="95000" />
       <workItem from="1616054029846" duration="23694000" />
       <workItem from="1616082591750" duration="2798000" />
-      <workItem from="1616089888608" duration="2992000" />
+      <workItem from="1616089888608" duration="3091000" />
+      <workItem from="1616131730085" duration="2522000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1615827289114</created>
@@ -285,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616075441068</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Collections 3">
+      <created>1616092901924</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616092901925</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +318,8 @@
     <MESSAGE value="observer category and post" />
     <MESSAGE value="created post and delete comments (controllers)" />
     <MESSAGE value="parent category and create accessor blogcategory" />
-    <option name="LAST_COMMIT_MESSAGE" value="parent category and create accessor blogcategory" />
+    <MESSAGE value="Collections 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Collections 3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

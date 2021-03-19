@@ -52,7 +52,7 @@ class DiggingDeeperController extends Controller
         $result['map']['not_exists'] = $result['map']['all']->where('exists', '=', false)->values();
             dd($result);*/
 
-/*        $collection->transform(function (array $item) { // мутирует текущую коллекцию и вернет ее
+        $collection->transform(function (array $item) { // мутирует текущую коллекцию и вернет ее
             $newItem = new \stdClass();
             $newItem->item_id = $item['id'];
             $newItem->item_name = $item['title'];
@@ -62,7 +62,7 @@ class DiggingDeeperController extends Controller
         });
 //        dd($collection);
 
-        $newItem = new \stdClass();
+        /*$newItem = new \stdClass();
         $newItem->id = 9999;
 
         $newItem2 = new \stdClass();
@@ -76,6 +76,24 @@ class DiggingDeeperController extends Controller
         $newItemLast = $collection->push($newItem2)->last();        //Добавитть элемент в конец коллекции и забрать его
         $pulledItem = $collection->pull(1);                     //забрать первый элемент (колличество элементов уменьшиться)
         dd(compact('collection', 'newItemFirst', 'newItemLast', 'pulledItem'));*/
+
+
+        /*  // Фильтрация. Замена orWhere()
+            $filtered = $collection->filter(function ($item) {
+            $byDay = $item->created_at->isFriday(); //isFriday (Carbon)
+            $byDate = $item = $item->created_at->day == 13;
+            $result = $byDay && $byDate;
+            return $result;
+        });
+        dd(compact('filtered'));*/
+
+        //сортировка
+        $sortedSimpleCollection = collect([5, 3, 1, 2, 4])->sort();     // простая сортировка по значениям, ключи сохранятся
+        //(для обновления используй value)
+        $sortedAscCollection = $collection->sortBy('created_at'); // от меньшего к большему
+        $sortedDescCollection = $collection->sortByDesc('item_id'); // от большего к меньшему
+
+        dd(compact('sortedSimpleCollection', 'sortedAscCollection', 'sortedDescCollection'));
 
     }
 }
