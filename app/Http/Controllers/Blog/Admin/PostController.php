@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Blog\Admin;
 
 use App\Http\Requests\BlogPostCreateRequest;
 use App\Http\Requests\BlogPostUpdateRequest;
+use App\Jobs\BlogPostAfterCreateJob;
+use App\Jobs\BlogPostAfterDeleteJob;
 use App\Models\BlogPost;
 use App\Repositories\BlogCategoryRepository;
 use App\Repositories\BlogPostRepository;
@@ -41,9 +43,15 @@ class PostController extends BaseController
     public function store(BlogPostCreateRequest $request)
     {
         $data = $request->input();
-        $item = (new BlogPost())->create($data);
 
+        $item = BlogPost::create($data);
         if ($item) {
+
+//            $job = new BlogPostAfterCreateJob($item);
+//            $this->dispatch($job);
+
+            BlogPostAfterCreateJob::dispatch($item);
+
             return redirect()->route('blog.admin.posts.edit', $item->id)
                 ->with(['success' => 'Успешно сохранено']);
         } else {
@@ -99,6 +107,18 @@ class PostController extends BaseController
 //        $result = BlogPost::find($id)->forceDelete();
 
         if ($result) {
+            //Варианты запуска
+            BlogPostAfterDeleteJob::dispatch($id)->delay(20); // отправляет в очередь и заполнит поле delay 20 сек,
+            // благодаря этому задание будет выполнятся с отсрочкой в 20 сек
+//            BlogPostAfterDeleteJob::dispatchNow($id); // выполнится моментально
+
+//            dispatch(new BlogPostAfterDeleteJob($id)); //хелпер
+//            dispatch_now(new BlogPostAfterDeleteJob($id)); //хелпер
+
+//            $this->dispatch(new BlogPostAfterDeleteJob($id));
+//            $this->dispatchNow(new BlogPostAfterDeleteJob($id));
+
+
             return redirect()
                 ->route('blog.admin.posts.index')
                 ->with(['success' => "Запись id[$id] удалена"]);

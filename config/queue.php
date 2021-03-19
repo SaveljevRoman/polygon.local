@@ -37,7 +37,9 @@ return [
         'database' => [
             'driver' => 'database',
             'table' => 'jobs',
-            'queue' => 'default',
+            'queue' => 'default', //имя очереди
+            //Если задание выполняется более retry_after секунд, без удаления, то задача вновь вернетяс
+            // в очередь для повторного запуска
             'retry_after' => 90,
             'after_commit' => false,
         ],
